@@ -311,7 +311,7 @@ tooltip_text = "Commande
 [node name="ColorRect" type="ColorRect" parent="Instruction"]
 layout_mode = 0
 offset_right = 220.0
-offset_bottom = 80.0
+offset_bottom = 87.0
 
 [node name="Label" type="Label" parent="Instruction"]
 modulate = Color(0, 0, 0, 1)
@@ -321,6 +321,7 @@ offset_bottom = 23.0
 text = "Commande :
  Q et D : déplacement gauche droite
 S : accelere chute
+Espace : sauter
 Clic Gauche : dash sur mousquetons
 R : recharger le niveau"
 label_settings = SubResource("LabelSettings_5hj2s")
