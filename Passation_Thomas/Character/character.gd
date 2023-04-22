@@ -54,13 +54,13 @@ func _physics_process(delta):
 #	if (rotation_degrees > 1):
 #		rotation_degrees -= 1
 #	else :
-##		self.rotation = 0
-#	if (velocity.x == 0) :
-#		$jump.scale.x = last_direction
-#	if (velocity.x > 0) :
-#		$jump.scale.x = 1
-#	if (velocity.x < 0) :
-#		$jump.scale.x = -1
+#		self.rotation = 0
+	if (velocity.x == 0) :
+		$jump.scale.x = last_direction
+	if (velocity.x > 0) :
+		$jump.scale.x = 1
+	if (velocity.x < 0) :
+		$jump.scale.x = -1
 	if !(is_dashing):
 		if direction:
 			$walk.scale.x = direction
@@ -79,13 +79,13 @@ func _physics_process(delta):
 			if abs(velocity.x) > 50 :
 				if velocity.x > 0:
 					velocity.x -= delta * max_speed*5
-					$jump.scale.x = 1
+#					$jump.scale.x = 1
 				if velocity.x < 0:
 					velocity.x += delta * max_speed*5
-					$jump.scale.x = -1
+#					$jump.scale.x = -1
 			else:
 				velocity.x = 0
-				$jump.scale.x = last_direction
+#				$jump.scale.x = last_direction
 			$idle.scale.x = last_direction
 			if (is_on_floor()&& !(is_jumping)):
 				state_machine.travel("idle")
