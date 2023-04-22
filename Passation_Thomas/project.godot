@@ -11,17 +11,13 @@ config_version=5
 [application]
 
 config/name="Passation_Thomas"
-run/main_scene="res://World/world.tscn"
+run/main_scene="res://World/level1.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Global="*res://Global.gd"
-
-[display]
-
-window/size/mode=3
 
 [input]
 
